@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "183560002724",
+    "firebase_url": "https://week4daily3homeassignment.firebaseio.com",
+    "project_id": "week4daily3homeassignment",
+    "storage_bucket": "week4daily3homeassignment.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183560002724:android:e55e413fa24e97c7",
+        "android_client_info": {
+          "package_name": "com.example.week4daily3homeassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183560002724-bc4tvm145cd9gf67aji54s5tdl7923d6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.week4daily3homeassignment",
+            "certificate_hash": "4e3efdde6c0c30f0d3ca6e40a5b7985f591453e3"
+          }
+        },
+        {
+          "client_id": "183560002724-stbg754pukn23n8lrt488pd0lssnss8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjwpwWafXDwQwVIDeVNvVQ_ySI4ySVjbI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183560002724-stbg754pukn23n8lrt488pd0lssnss8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
