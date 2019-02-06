@@ -1,7 +1,9 @@
 package com.example.week4daily3homeassignment.view.activities.mainactivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -44,6 +46,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
     EditText passwordEditTextView;
     TextView loginResultTextView;
     User user;
+    AlertDialog.Builder alertDialogBuilder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,8 +85,6 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
                 parameters.putString("fields", "id,name,email,gender,birthday");
                 request.setParameters(parameters);
                 request.executeAsync();
-
-
 
             }
 
@@ -146,7 +147,21 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
         }
         else {
 
-            Toast.makeText(this, "User Don't Exist", Toast.LENGTH_SHORT).show();
+            alertDialogBuilder = new AlertDialog.Builder(this);
+
+            alertDialogBuilder.setTitle("LogIn Failed!!!");
+            alertDialogBuilder.setMessage("Please check your email & password again. If you don't have any account, you can sign up.");
+            alertDialogBuilder.setIcon(R.drawable.alert_icon);
+
+            alertDialogBuilder.setNeutralButton("OK", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+
+            AlertDialog alertDialog = alertDialogBuilder.create();
+            alertDialog.show();
 
         }
 

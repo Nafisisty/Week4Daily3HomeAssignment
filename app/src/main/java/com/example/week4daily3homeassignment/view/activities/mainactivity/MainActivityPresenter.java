@@ -13,7 +13,6 @@ import com.google.firebase.auth.FirebaseUser;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.concurrent.Executor;
 
 public class MainActivityPresenter {
 
