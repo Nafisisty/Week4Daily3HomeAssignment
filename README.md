@@ -21,3 +21,6 @@ As, I have already logged in earlier, it hasn't ask for email & pass for me. But
 
 Successfully logged in using facebook. Showing facebook user inforamtion which is different from the firebase user.
 ![](app/src/main/res/drawable/screenshot_7.png)
+
+If user failed to login, alert dialog will pop up.
+![](app/src/main/res/drawable/screenshot_8.png)
